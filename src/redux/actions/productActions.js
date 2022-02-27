@@ -12,20 +12,6 @@ export const fetchProduct = (id) => async (dispatch) => {
   dispatch({ type: ActionTypes.FETCH_PRODUCT, payload: response.data });
 };
 
-export const setProducts = (products) => {
-  return {
-    type: ActionTypes.SET_PRODUCTS,
-    payload: products,
-  };
-};
-
-export const selectedProducts = (products) => {
-  return {
-    type: ActionTypes.SELECTED_PRODUCTS,
-    payload: products,
-  };
-};
-
 export const removeProducts = () => {
   return {
     type: ActionTypes.REMOVE_PRODUCTS,

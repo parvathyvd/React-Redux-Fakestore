@@ -8,6 +8,7 @@ import App from "./App";
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
+      {console.log("store is", store)}
       <App />
     </Provider>
   </React.StrictMode>,
